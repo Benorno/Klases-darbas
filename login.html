@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Login</title>
+</head>
+<body style="background-color: #444444; color: white">
+<header>
+    <div class="row my-3">
+        <div class="col-2">
+            <img src="assets/png/logo-no-background.png" alt="Logo" class="w-75 float-start ps-2">
+        </div>
+        <div class="col">
+            <div class="d-grid gap-2 d-sm-block float-start">
+                <a class="btn btn-outline-light" type="button" href="index.html">Home</a>
+                <a class="btn btn-outline-light" type="button" href="carlisting.html">List a Car</a>
+                <a class="btn btn-outline-light" type="button" href="contacts.html">Contacts</a>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col p-4 rounded-3 m-5 shadow" style="background-color: #00d1cd;">
+                <h1 class="text-center mb-5 bg-success shadow p-2 rounded-3">Login</h1>
+                <form class="row g-3">
+                    <label for="validationDefaultUsername" class="form-label">Username</label>
+                    <div class="input-group">
+                        <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                        <input type="text" class="form-control" id="validationDefaultUsername"
+                               aria-describedby="inputGroupPrepend2" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputPassword" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="inputPassword" required>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-success float-start" type="submit">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col">
+                <p class="mx-5 my-0">Don't have an account?</p><a class="mx-5" href="signup.html"
+                                                                    style="color: #198352">Sign Up</a>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>

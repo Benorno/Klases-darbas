@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Car Listing</title>
+</head>
+<body style="background-color: #444444; color: white">
+<header>
+    <div class="row my-3">
+        <div class="col-md-2">
+            <img src="assets/png/logo-no-background.png" alt="Logo" class="w-75 float-start ps-2">
+        </div>
+        <div class="col">
+            <div class="d-grid gap-2 d-md-block float-start">
+                <a class="btn btn-outline-light" type="button" href="index.html">Home</a>
+                <a class="btn btn-light" type="button" href="carlisting.html">List a Car</a>
+                <a class="btn btn-outline-light" type="button" href="contacts.html">Contacts</a>
+            </div>
+        </div>
+        <div class="col">
+            <nav class="navbar float-end">
+                <form class="container-fluid justify-content-start">
+                    <a class="btn btn-outline-success me-2" type="button" href="signup.html">Sign Up</a>
+                    <a class="btn btn-sm btn-outline-secondary" type="button" href="login.html">Login</a>
+                </form>
+            </nav>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <div class="row justify-content-evenly my-5">
+            <div class="mb-3 w-50 p-4 rounded-3 shadow" style="background-color: #00d1cd;">
+                <form class="row g-3 pb-3">
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputName" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" placeholder="First name" aria-label="Full Name" id="inputName">
+                    </div>
+                    <div class="input-group col-md-3 mt-3">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">Phone</button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">LT +370</a></li>
+                            <li><a class="dropdown-item" href="#">LV +360</a></li>
+                            <li><a class="dropdown-item" href="#">ES +350</a></li>
+                        </ul>
+                        <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                    </div>
+                    <div class="col-12">
+                        <label for="inputAddress" class="form-label">Address</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Pagrindine g.">
+                    </div>
+                    <div class="col-12">
+                        <label for="inputAddress2" class="form-label">Address 2</label>
+                        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputCity" class="form-label">City</label>
+                        <select id="inputCity" class="form-select">
+                            <option selected>Choose...</option>
+                            <option>Vilnius</option>
+                            <option>Kaunas</option>
+                            <option>Klaipeda</option>
+                            <option>Siauliai</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="inputZip" class="form-label">Zip</label>
+                        <input type="text" class="form-control" id="inputZip">
+                    </div>
+                    <div class="input-group col-md-4">
+                        <input type="text" class="form-control" placeholder="Monthly Price" aria-label="Dollar amount (with dot and two decimal places)">
+                        <span class="input-group-text">$</span>
+                    </div>
+                    <div class="input-group col-md-4">
+                        <input type="text" class="form-control" placeholder="Weekly Price" aria-label="Dollar amount (with dot and two decimal places)">
+                        <span class="input-group-text">$</span>
+                    </div>
+                    <div class="input-group col-md-4">
+                        <input type="text" class="form-control" placeholder="Daily Price" aria-label="Dollar amount (with dot and two decimal places)">
+                        <span class="input-group-text">$</span>
+                    </div>
+                </form>
+                <label for="formFileMultiple" class="form-label">Car Pictures</label>
+                <input class="form-control" type="file" id="formFileMultiple" multiple>
+                <label for="exampleColorInput" class="form-label pt-4">Car Body Color</label>
+                <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c"
+                       title="Choose your color">
+                <button class="btn btn-success my-3 float-end" type="submit">Submit</button>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="container mt-5 rounded-2" style="background-color: #5e5e5e">
+        <div class="row py-4">
+            <div class="col">
+                <span class="placeholder col-6"></span>
+                <br>
+                <span class="placeholder" style="width: 25%;"></span>
+                <br>
+                <span class="placeholder col-6"></span>
+                <span class="placeholder w-75"></span>
+                <span class="placeholder" style="width: 25%;"></span>
+                <br>
+                <span class="placeholder col-6"></span>
+                <span class="placeholder w-75"></span>
+                <span class="placeholder" style="width: 25%;"></span>
+            </div>
+            <div class="col">
+                <span class="placeholder col-6"></span>
+                <span class="placeholder w-75"></span>
+                <span class="placeholder" style="width: 25%;"></span>
+                <br>
+                <span class="placeholder col-6"></span>
+                <span class="placeholder w-75"></span>
+                <span class="placeholder" style="width: 25%;"></span>
+                <br>
+                <span class="placeholder col-6"></span>
+                <span class="placeholder w-75"></span>
+                <span class="placeholder" style="width: 25%;"></span>
+            </div>
+            <div class="col">
+                <span class="placeholder col-6"></span>
+                <span class="placeholder w-75"></span>
+                <span class="placeholder" style="width: 25%;"></span>
+                <br>
+                <span class="placeholder col-6"></span>
+                <span class="placeholder w-75"></span>
+                <span class="placeholder" style="width: 25%;"></span>
+                <br>
+                <span class="placeholder col-6"></span>
+                <span class="placeholder w-75"></span>
+                <span class="placeholder" style="width: 25%;"></span>
+            </div>
+        </div>
+
+    </div>
+</footer>
+</body>
+</html>
