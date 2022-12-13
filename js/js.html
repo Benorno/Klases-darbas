@@ -7,31 +7,26 @@
 </head>
 <body style="background-color: #444444; color: white">
 <main>
-    <div class="container">
-        <div class="row">
-            <div class="col p-5">
-                <script src="script.js"></script>
-                <p id="2uzdt"></p>
-                <script>
-                    //3+4 uzduoti
-                    let name = 'Tomas';
-                    let lastname = 'Tomauskas';
-                    let course = 4;
-                    let school = 'KTU';
-                    const grades = [7, 4, 5];
-                    document.getElementById("2uzdt").innerHTML =
-                        (name + ' ' + lastname + ' mokosi ' + school + ', ' + course + ' kurse , jo pazymiai: [' + grades + ']');
 
-                    //5    uzduotis
-                    console.log("Parametro 'name' tipas yra '" + typeof name + "'")
-                    console.log("Parametro 'lastname' tipas yra '" + typeof lastname + "'")
-                    console.log("Parametro 'course' tipas yra '" + typeof course + "'")
-                    console.log("Parametro 'school' tipas yra '" + typeof school + "'")
-                    console.log("Parametro 'grades' tipas yra '" + typeof grades + "'")
-                </script>
-            </div>
-        </div>
-    </div>
+    <script src="script.js"></script>
+    <p id="2uzdt"></p>
+    <script>
+        //3+4 uzduoti
+        let name = 'Tomas';
+        let lastname = 'Tomauskas';
+        let course = 4;
+        let school = 'KTU';
+        const grades = [7, 4, 5];
+        document.getElementById("2uzdt").innerHTML =
+            (name + ' ' + lastname + ' mokosi ' + school + ', ' + course + ' kurse , jo pazymiai: [' + grades + ']');
+
+        //5    uzduotis
+        console.log("Parametro 'name' tipas yra '" + typeof name + "'")
+        console.log("Parametro 'lastname' tipas yra '" + typeof lastname + "'")
+        console.log("Parametro 'course' tipas yra '" + typeof course + "'")
+        console.log("Parametro 'school' tipas yra '" + typeof school + "'")
+        console.log("Parametro 'grades' tipas yra '" + typeof grades + "'")
+    </script>
 </main>
 </body>
 </html>
