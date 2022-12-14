@@ -7,45 +7,56 @@
 </head>
 <body style="background-color: #444444; color: white;">
 <h1>temp</h1>
-<p>1+2 uzduotis</p>
-<p id="1uzd"></p>
+<p id="uz"></p>
+<br>
+<p>1 uzduotis</p>
 <p id="1uz"></p>
+<br>
 <p>3 uzduotis</p>
 <p id="3uz"></p>
+<br>
 <p>4 uzduotis</p>
 <p id="4uz"></p>
+<br>
 <p>5 uzduotis</p>
 <p id="5uz"></p>
 <script>
-    //1+2uzduotis
+    //1uzduotis
     let a = ['A', 'B', '1', 1, 2, 'Vardas', '', [], null];
-    let array = [];
-    let maxVal = 4;
-    let delta = Math.floor(a.length / maxVal);
-
-    for (let i = 0; i < a.length; i = i + delta) {
-        array.push(a[i]);
+    document.getElementById("uz").innerHTML = 'a = [' + a + ']';
+    let new_a = [];
+//----2 uzduotis--------------------- |
+//----------------------------------- \/ keiciant i += (x), keiciasi kas kuri sakiciu rodoma.
+    for (let i = 0; i < a.length; i += 2){
+        new_a.push(a[i])
     }
-    document.getElementById("1uzd").innerHTML = '[' + a + ']';
-    document.getElementById("1uz").innerHTML = array;
+    document.getElementById("1uz").innerHTML = new_a;
 
     //3uzduotis
-    function numberOnly(a) {
-        return a.filter(item => typeof item === 'number');
-    }
+    let b = a.filter(skaiciaiOnly);
 
-    document.getElementById("3uz").innerHTML = numberOnly(a);
+    function skaiciaiOnly(value) {
+        if (typeof (value) === 'number') {
+            return value;
+        }
+    }
+    document.getElementById("3uz").innerHTML = b;
 
     //4uzduotis
     let object = Object.keys(a).length
-    document.getElementById("4uz").innerHTML = object;
+    document.getElementById("4uz").innerHTML = object += ' "object" tipo kintamuju';
+
 
     //5uzduotis
-    function stringsOnly(a) {
-        return a.filter(item => typeof item === 'string');
+    let string = a.filter(stringOnly);
+
+    function stringOnly(value){
+        if (typeof (value) === 'string'){
+            return value;
+        }
     }
 
-    document.getElementById("5uz").innerHTML = stringsOnly(a);
+    document.getElementById("5uz").innerHTML = string;
 </script>
 </body>
 </html>
