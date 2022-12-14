@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/script.js"></script>
+</head>
+<body style="background-color: #444444; color: white;">
+<h1>temp</h1>
+<p>1+2 uzduotis</p>
+<p id="1uzd"></p>
+<p id="1uz"></p>
+<p>3 uzduotis</p>
+<p id="3uz"></p>
+<p>4 uzduotis</p>
+<p id="4uz"></p>
+<p>5 uzduotis</p>
+<p id="5uz"></p>
+<script>
+    //1+2uzduotis
+    let a = ['A', 'B', '1', 1, 2, 'Vardas', '', [], null];
+    let array = [];
+    let maxVal = 4;
+    let delta = Math.floor(a.length / maxVal);
+
+    for (let i = 0; i < a.length; i = i + delta) {
+        array.push(a[i]);
+    }
+    document.getElementById("1uzd").innerHTML = '[' + a + ']';
+    document.getElementById("1uz").innerHTML = array;
+
+    //3uzduotis
+    function numberOnly(a) {
+        return a.filter(item => typeof item === 'number');
+    }
+
+    document.getElementById("3uz").innerHTML = numberOnly(a);
+
+    //4uzduotis
+    let object = Object.keys(a).length
+    document.getElementById("4uz").innerHTML = object;
+
+    //5uzduotis
+    function stringsOnly(a) {
+        return a.filter(item => typeof item === 'string');
+    }
+
+    document.getElementById("5uz").innerHTML = stringsOnly(a);
+</script>
+</body>
+</html>
