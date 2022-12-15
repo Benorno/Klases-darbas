@@ -91,9 +91,9 @@ function addition(a, b) {
 //16uzduotis
 document.write('nuo 1 iki 100 <br>')
 let max = '..........'.length; //10 tasku '..........'
-                            //----10 tasku * 10 tasku = 100
+                            //----\/10 tasku * 10 tasku = 100
 for(let qty = '.'.length;qty <= (max * max);qty++){
-    document.write(`${qty}`);
+    document.write(`${qty}; `);
 }
 
 //17uzduotis
